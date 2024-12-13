@@ -41,3 +41,6 @@ dependencies = [
 
 [tool.hatch.envs.test.scripts]
 test = "pytest"
+
+[tool.pytest.ini_options]
+markers = ["asyncio: mark an async test as asyncio-based"]
