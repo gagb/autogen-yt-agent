@@ -7,7 +7,7 @@ from autogen_agentchat.teams import RoundRobinGroupChat
 
 @pytest.fixture
 def youtube_agent():
-    model_client = OpenAIChatCompletionClient(model="gpt-4o-2024-08-06")
+    model_client = OpenAIChatCompletionClient(model="gpt-4o", base_url="https://models.inference.ai.azure.com")
     return YouTubeAgent(name="yt_agent", model_client=model_client)
 
 @pytest.mark.asyncio
