@@ -32,3 +32,9 @@ prerelease = "allow"
 [tool.black]
 line-length = 88
 target-version = ['py310']
+
+[tool.hatch.envs.test]
+dependencies = [
+    "pytest",
+    "pytest-asyncio"
+]
