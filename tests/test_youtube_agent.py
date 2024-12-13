@@ -1,6 +1,6 @@
 import pytest
 
-from autogen_ext.models import OpenAIChatCompletionClient
+from autogen_ext.models.openai import OpenAIChatCompletionClient
 from autogen_yt_agent import YouTubeAgent
 from autogen_agentchat.task import TextMentionTermination
 from autogen_agentchat.teams import RoundRobinGroupChat
