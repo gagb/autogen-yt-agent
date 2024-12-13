@@ -1,10 +1,9 @@
 import pytest
-from unittest.mock import AsyncMock, patch
+
 from autogen_ext.models import OpenAIChatCompletionClient
 from autogen_yt_agent import YouTubeAgent
 from autogen_agentchat.task import TextMentionTermination
 from autogen_agentchat.teams import RoundRobinGroupChat
-from autogen_agentchat.task import TaskResult
 
 @pytest.fixture
 def youtube_agent():
