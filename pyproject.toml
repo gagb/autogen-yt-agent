@@ -38,3 +38,6 @@ dependencies = [
     "pytest",
     "pytest-asyncio"
 ]
+
+[tool.hatch.envs.test.scripts]
+test = "pytest"
