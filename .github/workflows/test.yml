@@ -29,10 +29,6 @@ jobs:
       - name: Install Hatch
         run: pipx install hatch
 
-      # Install pytest-asyncio for async test support
-      - name: Install pytest-asyncio
-        run: pip install pytest-asyncio
-
       # Run tests with OpenAI API key
       - name: Run tests
         env:
