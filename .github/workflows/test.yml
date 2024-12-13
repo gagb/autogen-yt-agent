@@ -29,10 +29,6 @@ jobs:
       - name: Install Hatch
         run: pipx install hatch
 
-      # Install dependencies
-      - name: Install dependencies
-        run: hatch env install
-
       # Install pytest-asyncio for async test support
       - name: Install pytest-asyncio
         run: pip install pytest-asyncio
